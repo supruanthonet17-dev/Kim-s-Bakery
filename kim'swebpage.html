@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kim's Bakery</title>
+    <style>
+        body {
+            background-color: cyan;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: white;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background-color: #f8f8f8;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: cyan;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        img {
+            width: 100%;
+            max-width: 400px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        p {
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-top: 40px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        li {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 25px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        li:hover {
+            transform: scale(1.05);
+        }
+        .contact {
+            text-align: center;
+            margin-top: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: cyan;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #00b3b3;
+        }
+        footer {
+            background-color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            li {
+                display: block;
+                margin: 10px auto;
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kim's Bakery</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container" id="home">
+        <img src="C:\Users\260162\Desktop\WEB\LG.png" alt="Kim's Bakery - Freshly Baked Goods">
+    </div>
+    
+    <div class="container" id="menu">
+        <h2>Our Menu</h2>
+        <ul>
+            <li>Chocolate Chip Cookies - $2.50 <img src="C:\Users\260162\Desktop\WEB\CC.avif" ></li>
+            <li>Blueberry Muffins - $3.00 <img src="C:\Users\260162\Desktop\WEB\BB.avif" ></li>
+            <li>Vanilla Cupcakes - $4.00 <img src="C:\Users\260162\Desktop\WEB\VV.avif" ></li>
+            <li>Cinnamon Buns - $3.50<img src="C:\Users\260162\Desktop\WEB\CR.avif" ></li>
+        </ul>
+    </div>
+    
+    <div class="container" id="about">
+        <h2>About Us</h2>
+        <p>Kim's Bakery has been serving the community with freshly baked goods since 2010. We pride ourselves on using only the best ingredients and traditional baking methods to bring you the tastiest treats.</p>
+        <p>Hours: Mon-Fri 7am-6pm, Sat-Sun 8am-4pm</p>
+    </div>
+    
+    <div class="container" id="contact">
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <p>Address: 123 Bakery Street, City, State</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: info@kimsbakery.com</p>
+        </div>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    
+    <footer>
+        <p>&copy; 2026 Kim's Bakery. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
